@@ -1,0 +1,7 @@
+*/__pycache__/*
+*/*/__pycache__/*
+*/logs/*
+*/reports/*
+*screenshots/*
+*.idea/
+*.DS_STORE
