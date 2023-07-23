@@ -11,7 +11,8 @@ def setup_teardown_method():
 def setup_teardown_class(request, browser):
     print("Class level setup")
     if browser == "chrome":
-        driver = webdriver.Chrome(timeout=30)
+        driver = webdriver.Chrome()
+        driver.set_page_load_timeout(30)  # Set the page load timeout to 30 seconds
     elif browser == "firefox":
         driver = webdriver.Firefox()
     else:
