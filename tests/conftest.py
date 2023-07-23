@@ -11,7 +11,7 @@ def setup_teardown_method():
 def setup_teardown_class(request, browser):
     print("Class level setup")
     if browser == "chrome":
-        driver = webdriver.Chrome()
+        driver = webdriver.Chrome(timeout=30)
     elif browser == "firefox":
         driver = webdriver.Firefox()
     else:
