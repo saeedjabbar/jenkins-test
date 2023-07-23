@@ -1,0 +1,11 @@
+07/22/2023 11:12:02 PM - CustomDriver - INFO: - Element found by locator type: xpath and locator://a[normalize-space()='Sign In']
+07/22/2023 11:12:03 PM - CustomDriver - INFO: - Waiting for maximum ::10:: seconds for element to be visible
+07/22/2023 11:12:03 PM - CustomDriver - INFO: - Element with locator type: id and locator: email appeared on the web page
+07/22/2023 11:12:03 PM - CustomDriver - INFO: - Sending  to element with locator: email
+07/22/2023 11:12:03 PM - CustomDriver - INFO: - Waiting for maximum ::10:: seconds for element to be visible
+07/22/2023 11:12:03 PM - CustomDriver - INFO: - Element with locator type: id and locator: login-password appeared on the web page
+07/22/2023 11:12:03 PM - CustomDriver - INFO: - Sending  to element with locator: login-password
+07/22/2023 11:12:04 PM - CustomDriver - INFO: - Waiting for maximum ::10:: seconds for element to be clickable
+07/22/2023 11:12:05 PM - CustomDriver - INFO: - Element with locator type: id and locator:login appeared on the web page
+07/22/2023 11:12:05 PM - CustomDriver - INFO: - Element with locator type: id and locator:login clicked after wait
+07/22/2023 11:12:05 PM - CustomDriver - INFO: - Element found by locator type: xpath and locator://span[@class='error']
