@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="function", autouse=True)
 def setup_teardown_method():
@@ -11,7 +12,10 @@ def setup_teardown_method():
 def setup_teardown_class(request, browser):
     print("Class level setup")
     if browser == "chrome":
-        driver = webdriver.Chrome()
+        chrome_options = Options()
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-gpu")
+        driver = webdriver.Chrome(options=chrome_options)
         driver.set_page_load_timeout(30)  # Set the page load timeout to 30 seconds
     elif browser == "firefox":
         driver = webdriver.Firefox()
